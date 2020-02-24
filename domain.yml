@@ -5,6 +5,7 @@ intents:
   - bot_challenge
   - user_detail_form
   - jobs
+  - ASE_impl
 
 
 actions:
@@ -13,6 +14,7 @@ actions:
   - utter_goodbye
   - utter_iamabot
   - utter_designation_list
+  - utter_ASE_impl
 
 entities:
   - first_name
@@ -51,6 +53,16 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Hsenid Mobile."
 
+  utter_ASE_impl:
+    - text: "Duties and Responsibilities: \n Analyze and document business and technical requirements\n\nDo you want to apply?"
+      buttons:
+        - title: "Yes"
+          payload: 'yes'
+        - title: "No"
+          payload: 'no'
+        - title: "Back"
+          payload: 'back'
+
   utter_designation_list:
     - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are available career perspectives\n\nDesignation List"
       buttons:
@@ -64,6 +76,8 @@ responses:
           payload: '/APM'
         - title: "Associate System Engineer - Implementation"
           payload: '/ASE_impl'
+
+
 
   utter_ask_first_name:
     - text: "What's your first name?"

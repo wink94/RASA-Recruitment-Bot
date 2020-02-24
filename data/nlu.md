@@ -8,7 +8,7 @@
 
 
 ## intent: user_detail_form
--yes
+- /yes
 -yes ok
 
 ## intent:goodbye
@@ -24,9 +24,9 @@
 - that sounds good
 - correct
 
-##intent: jobs
-- show jobs
-- jobs
+##intent: ASE_impl
+- /ASE_impl
+
 
 
 ## intent:bot_challenge
