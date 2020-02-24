@@ -1,0 +1,90 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - bot_challenge
+  - user_detail_form
+  - jobs
+
+
+actions:
+  - utter_welcome_message
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_designation_list
+
+entities:
+  - first_name
+  - last_name
+  - dob
+  - address
+  - phone
+  - email
+
+slots:
+  first_name:
+    type: unfeaturized
+  last_name:
+    type: unfeaturized
+  dob:
+    type: unfeaturized
+  address:
+    type: unfeaturized
+  phone:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+
+
+responses:
+  utter_welcome_message:
+  - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are available career perspectives"
+
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Hsenid Mobile."
+
+  utter_designation_list:
+    - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are available career perspectives\n\nDesignation List"
+      buttons:
+        - title: "Associate System Engineer - Implementation"
+          payload: '/ASE_impl'
+        - title: "Associate Software Engineer (DA)"
+          payload: '/ASE_DA'
+        - title: "Associate Business Solutions Engineer"
+          payload: '/ABSE'
+        - title: "Associate Project Manager"
+          payload: '/APM'
+        - title: "Associate System Engineer - Implementation"
+          payload: '/ASE_impl'
+
+  utter_ask_first_name:
+    - text: "What's your first name?"
+  utter_ask_last_name:
+    - text: "What's your last name?"
+  utter_ask_dob:
+    - text: "What's your birthday (dd/mm/yyyy)?"
+  utter_ask_address:
+    - text: "What's your address?"
+  utter_ask_phone:
+    - text: "What's your phone number?"
+  utter_ask_email:
+    - text: "What's your email?"
+  utter_wrong_input:
+    - text: "Please enter valid input!!"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+forms:
+  - user_detail_form

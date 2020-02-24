@@ -1,0 +1,10 @@
+[
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "user_detail_form",
+      "confidence": 0.5386616587638855
+    }
+  }
+]
