@@ -12,11 +12,13 @@
 from typing import Dict, Text, Any, List
 
 from typing import Dict, List, Text, Any, Union
+import re
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
-import re
+
+from form_friend_refer import ReferFriendForm
 
 # class ActionHelloWorld(Action):
 #
@@ -53,12 +55,12 @@ class UserDetailForm(FormAction):
 
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict[Text, Any]]]]:
         return {
-            "first_name": [self.from_text()],
-            "last_name": [self.from_text(intent=None)],
-            "dob":[self.from_text(intent=None)],
-            "address":[self.from_text(intent=None)],
-            "phone":[self.from_text(intent=None)],
-            "email":[self.from_text(intent=None)]
+            "first_name": [self.from_text( not_intent="refer_friend_form")],
+            "last_name": [self.from_text( not_intent="refer_friend_form")],
+            "dob":[self.from_text(not_intent="refer_friend_form")],
+            "address":[self.from_text(not_intent="refer_friend_form")],
+            "phone":[self.from_text(not_intent="refer_friend_form")],
+            "email":[self.from_text(not_intent="refer_friend_form")]
         }
 
     def validate_first_name (
@@ -142,5 +144,5 @@ class UserDetailForm(FormAction):
             tracker: Tracker,
             domain: Dict[Text, Any],
     ) -> List[Dict]:
-        dispatcher.utter_message("Thanks for getting in touch")
+        dispatcher.utter_message("Thanks for getting in touch with Hsenid Mobile")
         return []

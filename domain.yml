@@ -3,9 +3,13 @@ intents:
   - goodbye
   - affirm
   - bot_challenge
-  - user_detail_form
   - jobs
   - ASE_impl
+  - reselect
+  - leave_conversation
+  - refer_friend
+  - user_detail_form
+  - refer_friend_form
 
 
 actions:
@@ -15,6 +19,7 @@ actions:
   - utter_iamabot
   - utter_designation_list
   - utter_ASE_impl
+  - utter_refer_friend
 
 entities:
   - first_name
@@ -23,6 +28,8 @@ entities:
   - address
   - phone
   - email
+  - friends_name
+  - friends_email
 
 slots:
   first_name:
@@ -37,31 +44,21 @@ slots:
     type: unfeaturized
   email:
     type: unfeaturized
+  FriendName:
+    type: unfeaturized
+  FriendEmail:
+    type: unfeaturized
 
 
 responses:
   utter_welcome_message:
   - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are available career perspectives"
-
-
   utter_happy:
   - text: "Great, carry on!"
-
   utter_goodbye:
-  - text: "Bye"
-
+  - text: "Bye, Thank you for your time "
   utter_iamabot:
   - text: "I am a bot, powered by Hsenid Mobile."
-
-  utter_ASE_impl:
-    - text: "Duties and Responsibilities: \n Analyze and document business and technical requirements\n\nDo you want to apply?"
-      buttons:
-        - title: "Yes"
-          payload: 'yes'
-        - title: "No"
-          payload: 'no'
-        - title: "Back"
-          payload: 'back'
 
   utter_designation_list:
     - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are available career perspectives\n\nDesignation List"
@@ -75,10 +72,31 @@ responses:
         - title: "Associate Project Manager"
           payload: '/APM'
         - title: "Associate System Engineer - Implementation"
-          payload: '/ASE_impl'
+          payload: '/ASYSE_impl'
 
+  utter_ASE_impl:
+    - text: "Duties and Responsibilities:
+    \n Implementation and systematic verification of hardware, network, system, database and other specific environment required for installing hMS products \n
+    Implementation and systematic verification of hMS products at client environment \n
+    Involve in scripting and automation work-related operations and maintenance during implementation phase of the project \n
+    Adhering to hMS Implementation process during all of the implementation related activities \n\n
+    Qualification and Experience: \n
+    Degree in IT/Engineering or related field \n
+    Programming knowledge will be a plus (however, the position has No Software Development role involved) \n
+    Certifications in Linux (RHCSA and RHCE)
+    \n\n Do you want to apply?"
+      buttons:
+        - title: "Yes"
+          payload: '/yes'
+        - title: "No"
+          payload: '/no'
+        - title: "Back"
+          payload: '/back'
 
-
+  utter_ask_FriendName:
+    - text: "What's your friends name?"
+  utter_ask_FriendEmail:
+    - text: "What's your friends email?"
   utter_ask_first_name:
     - text: "What's your first name?"
   utter_ask_last_name:
@@ -95,10 +113,20 @@ responses:
     - text: "Please enter valid input!!"
 
 
+  utter_refer_friend:
+    - text: "Do you like to refer a friend?"
+      buttons:
+        - title: "Yes"
+          payload: '/friend_ref_T'
+        - title: "No"
+          payload: '/friend_ref_F'
+
+forms:
+  - user_detail_form
+  - refer_friend_form
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 
-forms:
-  - user_detail_form
+
