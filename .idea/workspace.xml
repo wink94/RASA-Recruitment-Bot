@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="764034b2-8841-4576-81f9-2d53585bda56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/form_friend_refer.py" afterDir="false" />
+    <list default="true" id="764034b2-8841-4576-81f9-2d53585bda56" name="Default Changelist" comment="friend referal,only for ASysE-impl">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,30 +56,42 @@
       <option name="project" value="LOCAL" />
       <updated>1582552351871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="friend referal,only for ASysE-impl">
+      <created>1582631030308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582631030308</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic flow with buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic flow with buttons" />
+    <MESSAGE value="friend referal,only for ASysE-impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="friend referal,only for ASysE-impl" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="324" y="24" key="CommitChangelistDialog2" timestamp="1582552351695">
+    <state x="324" y="24" key="CommitChangelistDialog2" timestamp="1582631043384">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="324" y="24" key="CommitChangelistDialog2/65.24.1301.744@65.24.1301.744" timestamp="1582552351695" />
+    <state x="324" y="24" key="CommitChangelistDialog2/65.24.1301.744@65.24.1301.744" timestamp="1582631043384" />
     <state x="209" y="24" key="SettingsEditor" timestamp="1582603630475">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="209" y="24" key="SettingsEditor/65.24.1301.744@65.24.1301.744" timestamp="1582603630475" />
-    <state x="315" y="119" key="Vcs.Push.Dialog.v2" timestamp="1582552387381">
+    <state x="315" y="119" key="Vcs.Push.Dialog.v2" timestamp="1582631162058">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="315" y="119" key="Vcs.Push.Dialog.v2/65.24.1301.744@65.24.1301.744" timestamp="1582552387381" />
+    <state x="315" y="119" key="Vcs.Push.Dialog.v2/65.24.1301.744@65.24.1301.744" timestamp="1582631162058" />
     <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1582551550706">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="376" y="211" key="com.intellij.ide.util.TipDialog/65.24.1301.744@65.24.1301.744" timestamp="1582551550706" />
+    <state x="488" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582631111219">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="488" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.24.1301.744@65.24.1301.744" timestamp="1582631111219" />
     <state x="662" y="24" width="704" height="744" key="find.popup" timestamp="1582543930133">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
