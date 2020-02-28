@@ -26,6 +26,7 @@ class ReferFriendForm(FormAction):
             "FriendEmail": [self.from_text(intent=None)]
         }
 
+    # first name alphabetical text only validation
     def validate_FriendName(
             self,
             value: Text,
@@ -40,6 +41,7 @@ class ReferFriendForm(FormAction):
             dispatcher.utter_message(template="utter_wrong_input")
             return {"FriendName": None}
 
+    # email validation
     def validate_FriendEmail(
             self,
             value: Text,

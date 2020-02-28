@@ -5,6 +5,56 @@
 ## ASE impl
 * ASE_impl
   - utter_ASE_impl
+  
+# ASE impl happy path
+* greet
+  - utter_designation_list
+* ASE_impl
+  - utter_ASE_impl
+* trigger_apply
+  - user_detail_form
+  - form{"name":"user_detail_form"}
+  - form{"name": null}
+* goodbye
+   - utter_goodbye
+   
+# ASE impl reject friend refer path
+* greet
+  - utter_designation_list
+* ASE_impl
+  - utter_ASE_impl
+* trigger_reject
+  - utter_refer_friend
+* friend_ref_T
+  - refer_friend_form
+  - form{"name":"refer_friend_form"} 
+  - form{"name": null}
+* goodbye
+   - utter_goodbye
+ 
+# ASE impl reject friend refer path
+* greet
+  - utter_designation_list
+* ASE_impl
+  - utter_ASE_impl
+* trigger_reject
+  - utter_refer_friend
+* friend_ref_T
+  - refer_friend_form
+  - form{"name":"refer_friend_form"} 
+  - form{"name": null}
+* goodbye
+   - utter_goodbye 
+
+# ASE impl reject friend refer reject path
+* greet
+  - utter_designation_list
+* ASE_impl
+  - utter_ASE_impl
+* trigger_reject
+  - utter_refer_friend
+* goodbye
+   - utter_goodbye 
 
 ## ASE DA
 * ASE_DA

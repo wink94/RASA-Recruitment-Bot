@@ -20,6 +20,7 @@ from rasa_sdk.forms import FormAction
 
 from form_friend_refer import ReferFriendForm
 
+
 # class ActionHelloWorld(Action):
 #
 #     def name(self) -> Text:
@@ -51,19 +52,18 @@ class UserDetailForm(FormAction):
             "email",
         ]
 
-
-
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict[Text, Any]]]]:
         return {
-            "first_name": [self.from_text( not_intent="refer_friend_form")],
-            "last_name": [self.from_text( not_intent="refer_friend_form")],
-            "dob":[self.from_text(not_intent="refer_friend_form")],
-            "address":[self.from_text(not_intent="refer_friend_form")],
-            "phone":[self.from_text(not_intent="refer_friend_form")],
-            "email":[self.from_text(not_intent="refer_friend_form")]
+            "first_name": [self.from_text(not_intent="refer_friend_form")],
+            "last_name": [self.from_text(not_intent="refer_friend_form")],
+            "dob": [self.from_text(not_intent="refer_friend_form")],
+            "address": [self.from_text(not_intent="refer_friend_form")],
+            "phone": [self.from_text(not_intent="refer_friend_form")],
+            "email": [self.from_text(not_intent="refer_friend_form")]
         }
 
-    def validate_first_name (
+    # first name alphabetical text only validation
+    def validate_first_name(
             self,
             value: Text,
             dispatcher: CollectingDispatcher,
@@ -77,7 +77,8 @@ class UserDetailForm(FormAction):
             dispatcher.utter_message(template="utter_wrong_input")
             return {"first_name": None}
 
-    def validate_last_name (
+    # last name alphabatical text only validation
+    def validate_last_name(
             self,
             value: Text,
             dispatcher: CollectingDispatcher,
@@ -91,7 +92,8 @@ class UserDetailForm(FormAction):
             dispatcher.utter_message(template="utter_wrong_input")
             return {"last_name": None}
 
-    def validate_dob (
+    # date validation
+    def validate_dob(
             self,
             value: Text,
             dispatcher: CollectingDispatcher,
@@ -101,13 +103,14 @@ class UserDetailForm(FormAction):
 
         reg_string = "^[0-3]?[0-9]/[0-3]?[0-9]/(?:[0-9]{2})?[0-9]{2}$"
 
-        if re.search(reg_string,value):
+        if re.search(reg_string, value):
             return {"dob": value}
         else:
             dispatcher.utter_message(template="utter_wrong_input")
             return {"dob": None}
 
-    def validate_phone (
+    # phone number validation
+    def validate_phone(
             self,
             value: Text,
             dispatcher: CollectingDispatcher,
@@ -115,13 +118,13 @@ class UserDetailForm(FormAction):
             domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
 
-
-        if value.strip().isdigit() and len(value.strip())==10:
+        if value.strip().isdigit() and len(value.strip()) == 10:
             return {"phone": value}
         else:
             dispatcher.utter_message(template="utter_wrong_input")
             return {"phone": None}
 
+    # email validation
     def validate_email(
             self,
             value: Text,
@@ -130,9 +133,9 @@ class UserDetailForm(FormAction):
             domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
 
-        reg_email="[^@]+@[^@]+\.[^@]+"
+        reg_email = "[^@]+@[^@]+\.[^@]+"
 
-        if re.search(reg_email,value):
+        if re.search(reg_email, value):
             return {"email": value}
         else:
             dispatcher.utter_message(template="utter_wrong_input")
@@ -145,5 +148,6 @@ class UserDetailForm(FormAction):
             domain: Dict[Text, Any],
     ) -> List[Dict]:
 
-        dispatcher.utter_message("Thanks for getting in touch with Hsenid Mobile")
+        dispatcher.utter_message("Please submit your CV to this link: https://www.hsenidmobile.com/careers/#careers /\n"
+                                 "Thanks for getting in touch with Hsenid Mobile")
         return [AllSlotsReset()]

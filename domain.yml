@@ -61,7 +61,7 @@ slots:
 
 responses:
   utter_welcome_message:
-  - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are available career perspectives"
+  - text: "Welcome to Hsenid Mobile Careers!!! \n"
   utter_happy:
   - text: "Great, carry on!"
   utter_goodbye:
@@ -72,7 +72,7 @@ responses:
   - text: "I am a bot, powered by Hsenid Mobile."
 
   utter_designation_list:
-    - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are available career perspectives\n\nDesignation List"
+    - text: "Welcome to Hsenid Mobile Careers!!\n\nThese are the currently available positions \n Designation List \n\n"
       buttons:
         - title: "Associate System Engineer - Implementation"
           payload: '/ASE_impl'
@@ -84,13 +84,16 @@ responses:
           payload: '/APM'
         - title: "Associate System Engineer - Implementation"
           payload: '/ASYSE_impl'
+        - title: "Exit"
+          payload: "bye"
 
   utter_ASE_impl:
-    - text: "Duties and Responsibilities:
+    - text: "Duties and Responsibilities: \n
     \n Implementation and systematic verification of hardware, network, system, database and other specific environment required for installing hMS products \n
-    Implementation and systematic verification of hMS products at client environment \n
+    Implementation and systematic verification of hMS products at client environment \n \n
     Qualification and Experience: \n
     Degree in IT/Engineering or related field \n
+    Programming knowledge will be a plus (however, the position has No Software Development role involved)
     \n\n Do you want to apply?"
       buttons:
         - title: "Yes"
@@ -101,9 +104,9 @@ responses:
           payload: '/trigger_back'
 
   utter_ASE_DA:
-    - text: "Duties and Responsibilities:
+    - text: "Duties and Responsibilities: \n
     \n Create detailed, comprehensive and well-structured test plans and test cases \n
-    Assist in create detailed, comprehensive and well-structured test plans and test cases \n
+    Assist in create detailed, comprehensive and well-structured test plans and test cases \n \n
     Qualification and Experience: \n
     Degree in Computer Science/ Engineering or equivalent IT qualifications \n
     \n\n Do you want to apply?"
@@ -119,7 +122,7 @@ responses:
     - text: "Duties and Responsibilities:
     \n Analyze and document business/technical requirements \n
     Pre-sales: handle presentations, demonstrations, respond to RFPs and prepare pre-sales documentation \n
-    Contribute to product development and road map \n
+    Contribute to product development and road map \n \n
     Qualification and Experience: \n
     Degree in IT, Engineering or equivalent \n
     2-3 Years of experience\n
@@ -136,7 +139,7 @@ responses:
     - text: "Duties and Responsibilities:
     \n Perform project management \n
     Coordinate internal resources and third parties/vendors for the smooth execution of projects \n
-    Ensure that all projects are delivered on time, within scope and within budget \n
+    Ensure that all projects are delivered on time, within scope and within budget \n \n
     Qualification and Experience: \n
     Bachelor’s Degree in Engineering, Computer Science, IT, Information Systems, other related field, or equivalent combination of academic and work experience. \n
     Minimum 3 years of experience in Information Technology\n
@@ -154,7 +157,7 @@ responses:
     \n Perform project management \n
     Implementation and systematic verification of hardware, network, system, database and other specific environment required for installing hMS products \n
     Implementation and systematic verification of hMS products at client environment  \n
-    Involve in scripting and automation work-related operations and maintenance during implementation phase of the project \n
+    Involve in scripting and automation work-related operations and maintenance during implementation phase of the project \n\n
     Qualification and Experience: \n
     Degree in IT/Engineering or related field \n
     Programming knowledge will be a plus (however, the position has No Software Development role involved) \n
@@ -184,7 +187,7 @@ responses:
   utter_ask_email:
     - text: "What's your email?"
   utter_wrong_input:
-    - text: "Please enter valid input!!"
+    - text: "Please enter a valid input!!"
   utter_refer_friend:
     - text: "Do you like to refer a friend?"
       buttons:
