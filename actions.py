@@ -10,7 +10,7 @@
 # from typing import Any, Text, Dict, List
 #
 from typing import Dict, Text, Any, List
-
+from rasa_sdk.events import AllSlotsReset
 from typing import Dict, List, Text, Any, Union
 import re
 
@@ -144,5 +144,6 @@ class UserDetailForm(FormAction):
             tracker: Tracker,
             domain: Dict[Text, Any],
     ) -> List[Dict]:
+
         dispatcher.utter_message("Thanks for getting in touch with Hsenid Mobile")
-        return []
+        return [AllSlotsReset()]

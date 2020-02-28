@@ -1,3 +1,4 @@
+from rasa_sdk.events import AllSlotsReset
 from typing import Dict, List, Text, Any, Union
 import re
 
@@ -62,4 +63,4 @@ class ReferFriendForm(FormAction):
             domain: Dict[Text, Any],
     ) -> List[Dict]:
         dispatcher.utter_message("Thanks for getting in touch with Hsenid Mobile")
-        return []
+        return [AllSlotsReset()]

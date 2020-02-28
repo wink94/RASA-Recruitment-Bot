@@ -6,11 +6,17 @@
 - good evening
 - hey there
 
-## intent: user_detail_form
-- /yes
+## intent: trigger_apply
+- trigger_apply
 
-## intent: refer_friend
-- /no
+## intent: trigger_reject
+- trigger_reject
+
+##intent: friend_ref_T
+- friend_ref_T
+
+##intent: friend_ref_F
+- friend_ref_T
 
 ## intent:goodbye
 - bye
@@ -28,8 +34,20 @@
 ##intent: ASE_impl
 - /ASE_impl
 
-##intent: reselect
-- /back
+##intent: ASE_DA
+- /ASE_DA
+
+##intent: ABSE
+- /ABSE
+
+##intent: APM
+- /APM
+
+## intent: ASYSE_impl
+- /ASYSE_impl
+
+##intent: trigger_back
+- trigger_back
 
 ## intent: refer_friend_form
 - /friend_ref_T

@@ -5,12 +5,17 @@ intents:
   - bot_challenge
   - jobs
   - ASE_impl
+  - ASE_DA
+  - ASYSE_impl
+  - APM
+  - ABSE
   - reselect
   - leave_conversation
-  - refer_friend
-  - user_detail_form
-  - refer_friend_form
-
+  - friend_ref_T
+  - friend_ref_F
+  - trigger_apply
+  - trigger_reject
+  - trigger_back
 
 actions:
   - utter_welcome_message
@@ -19,6 +24,10 @@ actions:
   - utter_iamabot
   - utter_designation_list
   - utter_ASE_impl
+  - utter_ASE_DA
+  - utter_ABSE
+  - utter_APM
+  - utter_ASYSE_impl
   - utter_refer_friend
 
 entities:
@@ -28,8 +37,8 @@ entities:
   - address
   - phone
   - email
-  - friends_name
-  - friends_email
+  - FriendName
+  - FriendEmail
 
 slots:
   first_name:
@@ -56,7 +65,9 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
   utter_goodbye:
-  - text: "Bye, Thank you for your time "
+  - text: "Bye, Thank you for getting in touch with Hsenid Mobile solutions "
+  utter_thank :
+  - text: "Thanks for getting in touch with Hsenid Mobile"
   utter_iamabot:
   - text: "I am a bot, powered by Hsenid Mobile."
 
@@ -78,20 +89,83 @@ responses:
     - text: "Duties and Responsibilities:
     \n Implementation and systematic verification of hardware, network, system, database and other specific environment required for installing hMS products \n
     Implementation and systematic verification of hMS products at client environment \n
-    Involve in scripting and automation work-related operations and maintenance during implementation phase of the project \n
-    Adhering to hMS Implementation process during all of the implementation related activities \n\n
     Qualification and Experience: \n
     Degree in IT/Engineering or related field \n
-    Programming knowledge will be a plus (however, the position has No Software Development role involved) \n
-    Certifications in Linux (RHCSA and RHCE)
     \n\n Do you want to apply?"
       buttons:
         - title: "Yes"
-          payload: '/yes'
+          payload: '/trigger_apply'
         - title: "No"
-          payload: '/no'
+          payload: '/trigger_reject'
         - title: "Back"
-          payload: '/back'
+          payload: '/trigger_back'
+
+  utter_ASE_DA:
+    - text: "Duties and Responsibilities:
+    \n Create detailed, comprehensive and well-structured test plans and test cases \n
+    Assist in create detailed, comprehensive and well-structured test plans and test cases \n
+    Qualification and Experience: \n
+    Degree in Computer Science/ Engineering or equivalent IT qualifications \n
+    \n\n Do you want to apply?"
+      buttons:
+        - title: "Yes"
+          payload: '/trigger_apply'
+        - title: "No"
+          payload: '/trigger_reject'
+        - title: "Back"
+          payload: '/trigger_back'
+
+  utter_ABSE:
+    - text: "Duties and Responsibilities:
+    \n Analyze and document business/technical requirements \n
+    Pre-sales: handle presentations, demonstrations, respond to RFPs and prepare pre-sales documentation \n
+    Contribute to product development and road map \n
+    Qualification and Experience: \n
+    Degree in IT, Engineering or equivalent \n
+    2-3 Years of experience\n
+    \n\n Do you want to apply?"
+      buttons:
+        - title: "Yes"
+          payload: '/trigger_apply'
+        - title: "No"
+          payload: '/trigger_reject'
+        - title: "Back"
+          payload: '/trigger_back'
+
+  utter_APM:
+    - text: "Duties and Responsibilities:
+    \n Perform project management \n
+    Coordinate internal resources and third parties/vendors for the smooth execution of projects \n
+    Ensure that all projects are delivered on time, within scope and within budget \n
+    Qualification and Experience: \n
+    Bachelor’s Degree in Engineering, Computer Science, IT, Information Systems, other related field, or equivalent combination of academic and work experience. \n
+    Minimum 3 years of experience in Information Technology\n
+    \n\n Do you want to apply?"
+      buttons:
+        - title: "Yes"
+          payload: '/trigger_apply'
+        - title: "No"
+          payload: '/trigger_reject'
+        - title: "Back"
+          payload: '/trigger_back'
+
+  utter_ASYSE_impl:
+    - text: "Duties and Responsibilities:
+    \n Perform project management \n
+    Implementation and systematic verification of hardware, network, system, database and other specific environment required for installing hMS products \n
+    Implementation and systematic verification of hMS products at client environment  \n
+    Involve in scripting and automation work-related operations and maintenance during implementation phase of the project \n
+    Qualification and Experience: \n
+    Degree in IT/Engineering or related field \n
+    Programming knowledge will be a plus (however, the position has No Software Development role involved) \n
+    \n\n Do you want to apply?"
+      buttons:
+        - title: "Yes"
+          payload: '/trigger_apply'
+        - title: "No"
+          payload: '/trigger_reject'
+        - title: "Back"
+          payload: '/trigger_back'
 
   utter_ask_FriendName:
     - text: "What's your friends name?"
@@ -111,8 +185,6 @@ responses:
     - text: "What's your email?"
   utter_wrong_input:
     - text: "Please enter valid input!!"
-
-
   utter_refer_friend:
     - text: "Do you like to refer a friend?"
       buttons:
