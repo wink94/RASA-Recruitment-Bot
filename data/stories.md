@@ -60,6 +60,18 @@
 * ASE_DA
   - utter_ASE_DA
   
+# ASE DA happy path
+* greet
+  - utter_designation_list
+* ASE_impl
+  - utter_ASE_impl
+* trigger_apply
+  - user_detail_form
+  - form{"name":"user_detail_form"}
+  - form{"name": null}
+* goodbye
+   - utter_goodbye
+  
 ## ABSE
 * ABSE
   - utter_ABSE

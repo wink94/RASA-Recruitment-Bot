@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="764034b2-8841-4576-81f9-2d53585bda56" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form_friend_refer.py" beforeDir="false" afterPath="$PROJECT_DIR$/form_friend_refer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flair-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -80,20 +77,28 @@
       <option name="project" value="LOCAL" />
       <updated>1582874598989</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added cv upload url">
+      <created>1582890266794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582890266794</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic flow with buttons" />
     <MESSAGE value="friend referal,only for ASysE-impl" />
     <MESSAGE value="implemented 5 job roles&#10;updated button payload to an intent type&#10;add reset slots in form submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented 5 job roles&#10;updated button payload to an intent type&#10;add reset slots in form submit" />
+    <MESSAGE value="added cv upload url" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cv upload url" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="261" y="24" width="738" height="744" key="CommitChangelistDialog2" timestamp="1582874598850">
+    <state x="289" y="79" width="738" height="643" key="CommitChangelistDialog2" timestamp="1582890266713">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="261" y="24" width="738" height="744" key="CommitChangelistDialog2/65.24.1301.744@65.24.1301.744" timestamp="1582874598850" />
+    <state x="289" y="79" width="738" height="643" key="CommitChangelistDialog2/65.24.1301.744@65.24.1301.744" timestamp="1582890266713" />
     <state x="503" y="141" key="FileChooserDialogImpl" timestamp="1582884706863">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
@@ -102,10 +107,10 @@
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="209" y="24" key="SettingsEditor/65.24.1301.744@65.24.1301.744" timestamp="1582603630475" />
-    <state x="315" y="119" key="Vcs.Push.Dialog.v2" timestamp="1582874610919">
+    <state x="315" y="119" key="Vcs.Push.Dialog.v2" timestamp="1582890282027">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="315" y="119" key="Vcs.Push.Dialog.v2/65.24.1301.744@65.24.1301.744" timestamp="1582874610919" />
+    <state x="315" y="119" key="Vcs.Push.Dialog.v2/65.24.1301.744@65.24.1301.744" timestamp="1582890282027" />
     <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1582857685056">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
