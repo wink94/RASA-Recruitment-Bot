@@ -16,6 +16,7 @@ intents:
   - trigger_apply
   - trigger_reject
   - trigger_back
+  - deactivate
 
 actions:
   - utter_welcome_message
@@ -65,9 +66,9 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
   utter_goodbye:
-  - text: "Bye, Thank you for getting in touch with Hsenid Mobile solutions "
+  - text: "Bye, Thank you for getting in touch with Hsenid Mobile solutions \nYou can submit your CV to this link: https://www.hsenidmobile.com/careers/#careers \n"
   utter_thank :
-  - text: "Thanks for getting in touch with Hsenid Mobile"
+  - text: "Thanks for getting in touch with Hsenid Mobile \nYou can submit your CV to this link: https://www.hsenidmobile.com/careers/#careers \n"
   utter_iamabot:
   - text: "I am a bot, powered by Hsenid Mobile."
 
@@ -125,7 +126,7 @@ responses:
     Contribute to product development and road map \n \n
     Qualification and Experience: \n
     Degree in IT, Engineering or equivalent \n
-    2-3 Years of experience\n
+    1-2 Years of experience\n
     \n\n Do you want to apply?"
       buttons:
         - title: "Yes"
@@ -142,7 +143,7 @@ responses:
     Ensure that all projects are delivered on time, within scope and within budget \n \n
     Qualification and Experience: \n
     Bachelor’s Degree in Engineering, Computer Science, IT, Information Systems, other related field, or equivalent combination of academic and work experience. \n
-    Minimum 3 years of experience in Information Technology\n
+    Minimum 1 years of experience in Information Technology\n
     \n\n Do you want to apply?"
       buttons:
         - title: "Yes"

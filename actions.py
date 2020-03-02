@@ -148,6 +148,5 @@ class UserDetailForm(FormAction):
             domain: Dict[Text, Any],
     ) -> List[Dict]:
 
-        dispatcher.utter_message("Please submit your CV to this link: https://www.hsenidmobile.com/careers/#careers /\n"
-                                 "Thanks for getting in touch with Hsenid Mobile")
+        dispatcher.utter_message("Thanks for getting in touch with Hsenid Mobile \nYou can submit your CV to this link: https://www.hsenidmobile.com/careers/#careers ")
         return [AllSlotsReset()]
