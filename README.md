@@ -1,8 +1,8 @@
 # RASA-Recruitment-Bot
 
-## This is a simple form based Bot for Job recruitment
+## This is a simple form based Bot for Job recruitment.
 
-## installation
+## Installation
 
 1. pip install -r requirements.txt
 
